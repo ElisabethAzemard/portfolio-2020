@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElisabethAzemard/portfolio-2020.git"
+  },
+  "author": "Elisabeth Azémard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElisabethAzemard/portfolio-2020/issues"
+  },
+  "homepage": "https://github.com/ElisabethAzemard/portfolio-2020#readme",
+  "dependencies": {
+    "bulma": "^0.8.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  }
+}

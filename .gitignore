@@ -1,0 +1,6 @@
+# packages
+node_modules
+
+# parcel related
+dist
+.cache
