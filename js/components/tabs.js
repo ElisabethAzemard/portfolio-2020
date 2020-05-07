@@ -16,26 +16,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const openTab = (tab) => {
 
         if (tab.id === 'code') {
+
             tilesToHideNoArray = document.querySelectorAll('.tile.notification:not(.is-primary)');
+
         } else if (tab.id === 'design') {
+
             tilesToHideNoArray = document.querySelectorAll('.tile.notification:not(.is-warning)');
+
         } else if (tab.id === 'writing') {
-            tilesToHideNoArray = document.querySelectorAll('.tile.notification:not(.is-light)');
+
+            tilesToHideNoArray = document.querySelectorAll('.tile.notification:not(.is-dark-grey)');
+
         } else if (tab.id === 'all') {
+
             tilesToHideNoArray = [];
+
         }
 
         let tilesToHide = Array.prototype.slice.call(tilesToHideNoArray);
 
-        let previousTiles = document.querySelectorAll('.tile.is-hidden');
+        let previousTilesHidden = document.querySelectorAll('.tile.notification.is-light');
 
-        previousTiles.forEach(tile => {
-            tile.classList.remove('is-hidden');
+        previousTilesHidden.forEach(tile => {
+            tile.classList.remove('is-light');
         });
 
         tilesToHide.forEach(tile => {
-            tile.classList.add('is-hidden');
+            tile.classList.add('is-light')
         })
+
     }
 
 });

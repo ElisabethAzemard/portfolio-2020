@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 document.addEventListener('DOMContentLoaded', () => {
 
     const quote = new Typewriter('#typewriter', {
-        loop: false,
+        loop: true,
         deleteSpeed: 25
     });
 
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .pauseFor(1000)
         .deleteChars(9)
         .typeString('writing."')
+        .pauseFor(10000)
         .start()
 
 });

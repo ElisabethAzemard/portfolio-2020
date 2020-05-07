@@ -7,6 +7,10 @@ $dark: hsl(0, 0%, 21%);
 $light: hsl(0, 0%, 96%);
 $primary-invert: $dark;
 
+$custom-colors: (
+    'dark-grey': $dark
+);
+
 
 // ----- FONTS -----
 $family-sans-serif: "Nunito", sans-serif;
