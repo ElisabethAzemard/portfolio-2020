@@ -1,2 +1,35 @@
 @charset "utf-8";
+@import "./base/fonts";
+
+
+// ----- COLORS -----
+$dark: hsl(0, 0%, 21%);
+$light: hsl(0, 0%, 96%);
+$primary-invert: $dark;
+
+
+// ----- FONTS -----
+$family-sans-serif: "Nunito", sans-serif;
+$family-monospace: "Courier Prime", monospace;
+$body-font-size: 1.25rem;
+
+
+// ----- NAVBAR -----
+$navbar-item-img-max-height: 2.5rem;
+
+
+// ----- FOOTER -----
+$footer-padding: 3rem 1.5rem;
+
+
+// ----- TIMELINE -----
+$timeline-content-padding: 1rem 5rem 0 3rem;
+
+
+// ----- IMPORT BULMA -----
 @import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
+
+
+// ----- MY TWEAKS -----
+@import "./components/navbar";

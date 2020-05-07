@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/ElisabethAzemard/portfolio-2020#readme",
   "dependencies": {
-    "bulma": "^0.8.2"
+    "bulma": "^0.8.2",
+    "bulma-extensions": "^6.2.7",
+    "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",

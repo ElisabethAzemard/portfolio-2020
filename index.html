@@ -7,12 +7,147 @@
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
-    <header>
-        <h1 class="title is-1">Portfolio 2020</h1>
+    <header class="hero is-dark is-medium">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item is-family-monospace has-text-weight-bold">
+                            <img src="./images/logo.png"
+                                alt="Logo">
+                            &nbsp;&nbsp;Elisabeth Azémard
+                        </a>
+                        <span class="navbar-burger burger"
+                            data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroB"
+                        class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active"
+                                href="#">
+                                Projets
+                            </a>
+                            <a class="navbar-item"
+                                href="a-propos.html">
+                                A propos
+                            </a>
+                            <a class="navbar-item"
+                                href="contact.html">
+                                Contact
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-dark is-inverted"
+                                    href="https://github.com/ElisabethAzemard"
+                                    target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Github</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-size-1 is-family-monospace" id="typewriter"></h2>
+                <p class="subtitle is-size-4">C.S. Lewis</p>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul id="tabs">
+                        <li class="is-active" id="all">
+                            <a>All</a>
+                        </li>
+                        <li id="code">
+                            <a>Code</a>
+                        </li>
+                        <li id="design">
+                            <a>Design</a>
+                        </li>
+                        <li id="writing">
+                            <a>Writing</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
+        <section class="section tab-content">
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child notification is-primary">
+                        <p class="title">One</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+                            vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                    </div>
+                    <div class="tile is-child notification is-warning">
+                        <p class="title">Two</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+                            vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                    </div>
+                </div>
+                <div class="tile is-vertical is-parent">
+                    <div class="tile is-child notification is-light">
+                        <p class="title">Three</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                            felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo
+                            sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                    </div>
+                    <div class="tile is-child notification is-danger">
+                        <p class="title">Four</p>
+                        <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque
+                            interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet
+                            erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida
+                            diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+                    </div>
+                    <div class="tile is-child notification is-primary">
+                        <p class="title">Five</p>
+                        <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor
+                            consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a
+                            nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+                    </div>
+                </div>
+                <div class="tile is-vertical is-parent">
+                    <div class="tile is-child notification is-primary">
+                        <p class="title">Six</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                            felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo
+                            sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                        <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque
+                            interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet
+                            erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida
+                            diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+
+                    </div>
+                    <div class="tile is-child notification is-light">
+                        <p class="title">Seven</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+                            felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo
+                            sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Elisabeth Azémard &copy; 2020</p>
+        </div>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
