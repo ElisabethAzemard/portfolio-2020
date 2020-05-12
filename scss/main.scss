@@ -15,7 +15,6 @@ $custom-colors: (
 // ----- FONTS -----
 $family-sans-serif: "Nunito", sans-serif;
 $family-monospace: "Courier Prime", monospace;
-$body-font-size: 1.25rem;
 
 
 // ----- NAVBAR -----
@@ -26,14 +25,56 @@ $navbar-item-img-max-height: 2.5rem;
 $footer-padding: 3rem 1.5rem;
 
 
-// ----- TIMELINE -----
-$timeline-content-padding: 1rem 5rem 0 3rem;
+// ----- TILES -----
+$notification-padding: 1.25rem;
 
+.tile img {
+    border: 5px solid $light;
+}
+
+.fade-image {
+    opacity: .4;
+}
+
+// iframe
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
 
 // ----- IMPORT BULMA -----
-@import "../node_modules/bulma/bulma.sass";
-@import "../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
 
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
+@import "../node_modules/bulma/sass/elements/tag.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/message.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
+
+@import "../node_modules/bulma/sass/grid/tiles.sass";
+
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
+@import "../node_modules/bulma-extensions/bulma-timeline/dist/css/bulma-timeline.sass";
 
 // ----- MY TWEAKS -----
 @import "./components/navbar";

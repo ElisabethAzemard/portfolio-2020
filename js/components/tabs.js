@@ -39,10 +39,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         previousTilesHidden.forEach(tile => {
             tile.classList.remove('is-light');
+
+            let tileButtons = tile.querySelectorAll('button');
+            tileButtons.forEach(button => {
+                button.classList.remove('is-light')
+            })
+
+            let tileImages = tile.querySelectorAll('img, iframe');
+            tileImages.forEach(image => {
+                image.classList.remove('fade-image');
+            })
+            console.log('coucou')
         });
 
         tilesToHide.forEach(tile => {
             tile.classList.add('is-light')
+
+            let tileButtons = tile.querySelectorAll('button');
+            tileButtons.forEach(button => {
+                button.classList.add('is-light')
+            })
+
+            let tileImages = tile.querySelectorAll('img, iframe');
+            tileImages.forEach(image => {
+                image.classList.add('fade-image');
+            })
+
         })
 
     }

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Elisabeth Azémard</title>
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet"
+        href="scss/main.scss">
 </head>
+
 <body>
-    <header class="hero is-dark is-medium">
+    <header class="hero is-dark">
         <div class="hero-head">
             <nav class="navbar is-transparent">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item is-family-monospace has-text-weight-bold" href="#">
-                            <img src="./images/logo.png" alt="Portfolio Elisabeth Azémard">
+                        <a class="navbar-item is-family-monospace has-text-weight-bold"
+                            href="#">
+                            <img class="image" src="./images/logo.png" alt="Portfolio Elisabeth Azémard">
                             &nbsp;&nbsp;Elisabeth Azémard
                         </a>
                         <span class="navbar-burger burger"
@@ -43,7 +48,7 @@
                                     href="https://github.com/ElisabethAzemard"
                                     target="_blank">
                                     <span class="icon">
-                                        <i class="fab fa-github"></i>
+                                        <img src="images/github.png" alt="github logo">
                                     </span>
                                     <span>Github</span>
                                 </a>
@@ -56,10 +61,11 @@
 
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="title is-size-1 is-family-monospace" id="typewriter">
-                    <span class="sr-only">You can make anything by coding, designing, writing.</span>
+                <h2 class="title is-size-3 is-family-monospace"
+                    id="typewriter">
+                    <span class="is-sr-only">You can make anything by coding, designing, writing.</span>
                 </h2>
-                <p class="subtitle is-size-4">C.S. Lewis</p>
+                <p class="subtitle is-size-5">C.S. Lewis</p>
             </div>
         </div>
 
@@ -67,7 +73,8 @@
             <nav class="tabs is-centered is-medium is-boxed">
                 <div class="container">
                     <ul id="tabs">
-                        <li class="is-active" id="all">
+                        <li class="is-active"
+                            id="all">
                             <a>All</a>
                         </li>
                         <li id="code">
@@ -87,109 +94,559 @@
     </header>
     <main>
         <section class="section tab-content">
-            <h2 class="sr-only">All projects</h2>
+            <h2 class="is-sr-only">All projects</h2>
             <div class="container">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-primary">
-                            <p class="title">Hello World</p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-dark-grey">
-                            <p class="title">Foo</p>
-                            <p class="subtitle">Bar</p>
+                            <h3 class="title">Idecom</h3>
+                            <p class="subtitle"><span class="tag">WordPress</span></p>
+                            <div class="content">
+                                <p>Work project: make a new website for the company. My very first back & front WordPress.</p>
+                                <img src="images/projects/dev/idecom.jpg"
+                                    alt="home page screenshot of the Idecom website">
+                                <button class="button is-fullwidth is-light"
+                                    href="https://www.groupeidecom.com/"
+                                    target="_blank">Visit the website</button>
+                            </div>
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-warning">
-                            <p class="title">Third column</p>
-                            <p class="subtitle">With some content</p>
+                            <h3 class="title">The flying stag</h3>
+                            <p class="subtitle"><span class="tag">Illustrator</span></p>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                                    tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                <p>In French we don't say "kite", we say "flying stag", and I think that's hilarious.</p>
+                                <img src="images/projects/design/cerf_volant.jpg" alt="the flying stag">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <h3 class="title">Amenovia</h3>
+                            <p class="subtitle">
+                                <span class="tag">Prestashop</span>
+                                <span class="tag">Smarty</span>
+                                <span class="tag">Bootstrap</span>
+                            </p>
+                            <div class="content">
+                                <p>Work project. Turning the client's identity into a full design system.</p>
+                                <img src="images/projects/dev/amenovia.jpg" alt="logo amenovia">
+                                <a class="button is-light is-fullwidth" href="http://amenovia.com/" target="_blank">Visit the website</a>
                             </div>
                         </article>
                     </div>
                 </div>
 
                 <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-8">
-                        <div class="tile">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-dark-grey">
-                                    <p class="title">Vertical tiles</p>
-                                    <p class="subtitle">Top notification</p>
-                                </article>
-                                <article class="tile is-child notification is-primary">
-                                    <p class="title">Vertical tiles</p>
-                                    <p class="subtitle">Bottom notification</p>
-                                </article>
+                    <div class="tile is-parent is-8">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">Flex panels</h3>
+                            <p class="subtitle">
+                                <span class="tag">Javascript</span>
+                                <span class="tag">CSS</span>
+                            </p>
+                            <div class="content">
+                                <img src="images/projects/dev/flex_panels.jpg" alt="flex panels screenshot">
+                                <button class="button is-light is-fullwidth">Panel away</button>
                             </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child notification is-primary">
-                                    <p class="title">Middle notification</p>
-                                    <p class="subtitle">With an image</p>
-                                    <figure class="image is-4by3">
-                                        <img src="https://bulma.io/images/placeholders/640x480.png" alt="placeholder image">
-                                    </figure>
-                                </article>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <h3 class="title">Gleebaby</h3>
+                            <p class="subtitle">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Blade</span>
+                                <span class="tag">Bootstrap</span>
+                            </p>
+                            <div class="content">
+                                <p>A digital platform to bring heathcare practitioners and parents together. Master's degree group final
+                                    project.</p>
+                                <img src="images/projects/dev/gleebaby_logo.jpg"
+                                    alt="logo gleebaby">
+                                <button class="button is-fullwidth is-light open-modal"
+                                    aria-has-popup="true"
+                                    data-target="#myModal">See more</button>
+                                <div class="modal"
+                                    id="myModal">
+                                    <div class="modal-background"
+                                        data-target="#myModal"></div>
+                                    <div class="modal-content">
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Modal title</p>
+                                                <button class="delete"
+                                                    aria-label="close"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                <!-- Content ... -->
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <button class="button is-fullwidth is-light is-success">Save changes</button>
+                                                <button class="button is-fullwidth is-light">Cancel</button>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <button class="modal-close is-large close-modal"
+                                        aria-label="close"
+                                        data-target="#myModal"></button>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">Solar <strike>panels</strike> pines</h3>
+                            <p class="subtitle"><span class="tag">Photoshop</span></p>
+                            <div class="content">
+                                <p>Mirror, mirror in the sky...</p>
+                                <img src="images/projects/design/round.jpg" alt="tree sun">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <h3 class="title">RPN Calculator</h3>
+                            <p class="subtitle">
+                                <span class="tag">React</span>
+                                <span class="tag">CSS (Bulma)</span>
+                            </p>
+                            <div class="content">
+                                <p>A <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank" title="Wikipedia page for Reverse Polish Notation">reverse polish notation</a> calculator...</p>
+                                <img src="images/projects/dev/rpn_calculator.jpg" alt="react calculator">
+                                <a class="button is-fullwidth is-light" href="https://codesandbox.io/s/react-rpn-fjc16?file=/src/App.css" target="_blank">Do some math</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">Princesses</h3>
+                            <p class="subtitle"><span class="tag">Illustrator</span></p>
+                            <div class="content">
+                                <p>Sometimes all we need is some Disney magic.</p>
+                                <img src="images/projects/design/princesses.jpg"
+                                    alt="Disney princesses flat illustrations.">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical">
                         <div class="tile is-parent">
                             <article class="tile is-child notification is-primary">
-                                <p class="title">Wide column</p>
-                                <p class="subtitle">Aligned with the right column</p>
+                                <h3 class="title">Meal plan app</h3>
+                                <p class="subtitle">
+                                    <span class="tag">Angular</span>
+                                    <span class="tag">NodeJS</span>
+                                    <span class="tag">MongoDB</span>
+                                </p>
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                                        tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                    <p>Master's degree solo final project. <br>An app to manage groceries and inventory. Plan the meals for the upcoming weeks and get recipes suggestions based on what we've already got at home.</p>
+                                    <img src="images/projects/dev/postman_logo.jpg" alt="logo postman">
+                                    <a class="button is-light is-fullwidth" href="https://documenter.getpostman.com/view/5257247/SzfAyRgn?version=latest">Link to the postman API documentation</a>
+                                </div>
+                                <div class="content">
+                                    <img src="images/projects/dev/logo_remy.jpg" alt="logo postman">
+                                    <a class="button is-light is-fullwidth" href="https://documenter.getpostman.com/view/5257247/SzfAyRgn?version=latest">Link to the postman API documentation</a>
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-primary">
-                            <div class="content">
-                                <p class="title">Tall column</p>
-                                <p class="subtitle">With even more content</p>
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-warning">
+                                    <h3 class="title">WordReference</h3>
+                                    <p class="subtitle">
+                                        <span class="tag">Indesign</span>
+                                        <span class="tag">Illustrator</span>
+                                    </p>
+                                    <div class="content">
+                                        <div class="content">
+                                            <p>Bachelor final project: redesign an app you use often.</p>
+                                            <img src="images/projects/design/wordreference.jpg" alt="Screenshots of the project">
+                                            <button class="button is-light is-fullwidth open-modal" data-target="#wordReferenceModal">See more elements</button>
+                                            <div class="modal"
+                                                id="wordReferenceModal">
+                                                <div class="modal-background"
+                                                    data-target="#wordReferenceModal"></div>
+                                                <div class="modal-content">
+                                                    <div class="box">
+                                                        <h4>#1 - Logo</h4>
+                                                        <img src="images/projects/design/wr_sketch.jpg" alt="WordReference logos, old & new">
+                                                    </div>
+                                                    <div class="box">
+                                                        <h4>#2 - Icons</h4>
+                                                        <img src="images/projects/design/wr_icons.jpg" alt="WordReference icons, old & new">
+                                                    </div>
+                                                    <div class="box">
+                                                        <h4>#3 - UI</h4>
+                                                        <img src="images/projects/design/wr_screen.jpg" alt="WordReference UI screenshot, old & new">
+                                                    </div>
+
+                                                </div>
+                                                <button class="modal-close is-large close-modal"
+                                                    aria-label="close"
+                                                    data-target="#wordReferenceModal"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-primary">
+                                    <h3 class="title">Flashcards</h3>
+                                    <p class="subtitle">
+                                        <span class="tag">Redux</span>
+                                        <span class="tag">Javascript</span>
+                                        <span class="tag">CSS (Bulma)</span>
+                                    </p>
+                                    <div class="content">
+                                        <div class="content">
+                                            <p>Add flashcards, go through them and flip them. WIP.</p>
+                                            <img src="images/projects/dev/redux_flashcards.jpg"
+                                                alt="Redux flashcards app screenshot">
+                                            <a class="button is-light is-fullwidth" href="https://github.com/ElisabethAzemard/redux-flashcards-app" target="_blank">Github repo</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-warning">
+                                <h3 class="title">A Perfect Pear</h3>
+                                <p class="subtitle"><span class="tag">Illustrator</span></p>
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
-                                        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
-                                        Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut
-                                        quam.</p>
-                                    <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis.
-                                        Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin
-                                        felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit
-                                        amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat
-                                        tortor.</p>
-                                    <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor
-                                        consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras
-                                        ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper
-                                        leo.</p>
+                                    <!-- <p>The healthy fruit segments series.</p> -->
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-parent">
+                                            <div class="tile is-child">
+                                                <img src="images/projects/design/fruits/pear.jpg" alt="Pear illustration">
+                                            </div>
+                                        </div>
+                                        <div class="tile is-parent">
+                                            <div class="tile is-child">
+                                                <img src="images/projects/design/fruits/grapefruit.jpg" alt="Grapefruit illustration">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">Variations on Triangles</h3>
+                            <p class="subtitle"><span class="tag">Photoshop</span></p>
+                            <div class="content">
+                                <h4 class="subtitle">#1 The tri- from every -angle</h4>
+                                <img src="images/projects/design/triangles/triangles-multiples.jpg" alt="Triangles montage">
+                            </div>
+                            <div class="content">
+                                <h4 class="subtitle">#2 Dark side of the triangle</h4>
+                                <img src="images/projects/design/triangles/triangles3.jpg" alt="Triangles montage">
                             </div>
                         </article>
+
+                    </div>
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-primary">
+                                    <h3 class="title">Drum kit</h3>
+                                    <p class="subtitle">
+                                        <span class="tag">Javascript</span> <span class="tag">CSS</span>
+                                    </p>
+                                    <div class="content">
+                                        <p>Ba dum tss.</p>
+                                        <img src="images/projects/dev/drum_kit.jpg" alt="drum kit">
+                                        <a class="button is-fullwidth is-light" href="https://codesandbox.io/s/js30-drumkit-ipvxw" target="_blank">Play the drums!</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-warning">
+                                    <h3 class="title">Self portrait</h3>
+                                    <p class="subtitle"><span class="tag">Photoshop</span></p>
+                                    <div class="content">
+                                        <p>Actual footage of me using Photoshop for the very first time.<br>Bunnies & rainbows for the win!</p>
+                                        <img src="images/projects/design/self_portrait.jpg" alt="self portrait">
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-dark-grey">
+                                <h3 class="title">Blockchain: umpteenth example of the lack of women in tech or a generation's utopia?</h3>
+                                <div class="content">
+                                    <p>
+                                        The first contact I had with the blockchain was "Anyway, only men talk about it. Even the articles written on the subject are all written by men". So as a woman, a developer, I started out with a lot of preconceived ideas. And then, as I got closer, I realised that my initial assessment had been somewhat hasty.
+                                    </p>
+                                    <h4 class="subtitle is-uppercase">The blockchain, obviously obscure and dominated by men</h4>
+                                    <p>
+                                        Not only did I start from the principle that the blockchain is still an area that leaves no room for women, but above all, I told myself that I was necessarily not going to understand anything about it. When I turned to my friend Google, I was a bit drowned in explanations, each one more complex than the other. And of
+                                        course, no women on the horizon.
+                                    </p>
+                                    <div class="modal"
+                                        id="blockchainModal">
+                                        <div class="modal-background"
+                                            data-target="#blockchainModal"></div>
+                                        <div class="modal-content">
+                                            <div class="box">
+                                                <p>
+                                                    The first contact I had with the blockchain was "Anyway, only men talk about it. Even the articles written on the subject are all written by men". So as a woman, a developer, I started out with a lot of  preconceived ideas. And then, as I got closer, I realised that my initial assessment had been somewhat hasty.
+                                                </p>
+                                                <h4 class="subtitle is-uppercase">The blockchain, obviously obscure and dominated by men</h4>
+                                                <p>
+                                                    Not only did I start from the principle that the blockchain is still an area that leaves no room for women, but above all, I told myself that I was necessarily not going to understand anything about it. When I turned to my friend Google, I was a bit drowned in explanations, each one more complex than the other. And of course, no women on the horizon.
+                                                </p>
+                                                <blockquote>
+                                                    "Everybody's heard of it... and in most cases, nobody understands it." - Claire Balva
+                                                </blockquote>
+                                                <p>
+                                                    There I had it, my preconceived notions were confirmed. I thought I had my topic, "The blockchain, umpteenth example of inequalities in technology". Except that there were already a lot of articles on the subject. Looking a little further, I came across Claire Balva's TEDx, which explains the stakes of the blockchain and how it could change our
+                                                    relationships in society.
+                                                </p>
+                                                <p>
+                                                    That's when my somewhat unsteady thinking began to dangerously sway. It finished collapsing when I attended a master class by Quentin de Beauchesne on blockchain and bitcoin.
+                                                </p>
+                                                <p>
+                                                    For one thing, because by the end of the lecture, I had figured it out. I have no plans to create my own Bitcoin, nor to become an expert in blockchain. But I understood, and more importantly, I find the subject fascinating because of the range of possible applications. In a (very small) nutshell, blockchain is a system for storing and transmitting
+                                                    value (money, votes, etc.) in a secure and transparent way. The first use we know of it, with crypto-currencies, is therefore only the tip of the iceberg. It is a real technological revolution that opens up a new realm of possibilities.
+                                                </p>
+                                                <p>
+                                                    On the other hand, because I remembered a polemic in the AI field. We've seen sexist, even racist biases emerge because the people who design these interfaces are... men. I thought I could use this example to illustrate the potential dangers of a gender imbalance in the development of a technology.
+                                                </p>
+                                                <h4 class="subtitle is-uppercase">The blockchain, good student of tech</p>
+                                                <h4>
+                                                    Except that, in fact, the blockchain in essence has a strong potential to abolish inequalities.
+                                                </p>
+                                                <p>
+                                                    It is based on decentralisation and the elimination of intermediaries. In an ideal world, this would allow the value created by users to be redistributed among themselves instead of being taken over by the intermediaries who coordinate them. All links in the chain are equally important.
+                                                </p>
+                                                <p>
+                                                    The creator of Bitcoin, Satoshi Nakamoto, is himself a great mystery. "He" claims to be a man, Japanese, 43 years old. In reality, we know nothing about this, or these people. He thus seems to suggest that it doesn't matter whether he is a man, a woman or an alien. Without a face, without an identity known beyond their name, they are a bit of a symbol of a world where age, ethnicity or gender no longer have a place as discrimination factors.
+                                                </p>
+                                                <p>
+                                                    If inequalities between individuals in general are erased, perhaps gender inequalities will therefore not only no longer have any place, but will no longer even be a subject for discussion.
+                                                </p>
+                                                <p>
+                                                    In the end, the blockchain may well be the right student of tech. The problem is not related to the blockchain in particular, but rather to tech in general. And maybe if we spent less time pointing fingers than encouraging everyone interested in a technology to develop it, we would have less time to wonder whether or not this or that inequality still
+                                                    persists.
+                                                </p>
+                                                <h4 class="subtitle is-uppercase">Sources</h4>
+                                                <h5 class="subtitle">Ressources</h5>
+                                                <p>Quentin de Beauchesne on LinkedIn : <a href='https://fr.linkedin.com/in/qdebeauchesne'
+                                                        target='_blank'
+                                                        class='url'>https://fr.linkedin.com/in/qdebeauchesne</a></p>
+                                                <p>Claire Balva, <em>La Blockchain : réinventer les rapports de confiance</em> on youtube.com (in French) <a
+                                                        href='https://www.youtube.com/watch?v=JID9c-MABis&amp;t=536s'
+                                                        target='_blank'
+                                                        class='url'>https://www.youtube.com/watch?v=JID9c-MABis&t=536s</a></p>
+                                                <p>Corine Goldberger, <em>L&#39;intelligence artificielle est-elle sexiste ?</em> on marieclaire.fr (in French) <a
+                                                        href='https://www.marieclaire.fr/pourquoi-l-intelligence-artificielle-est-sexiste,1271156.asp'
+                                                        target='_blank'
+                                                        class='url'>https://www.marieclaire.fr/pourquoi-l-intelligence-artificielle-est-sexiste,1271156.asp</a></p>
+                                                <p>Léonor Lumineau, <em>Satoshi Nakamoto : qui se cache derrière le créateur du bitcoin ?</em> on capital.fr (in French) <a
+                                                        href='https://www.capital.fr/entreprises-marches/satoshi-nakamoto-qui-se-cache-derriere-le-createur-du-bitcoin-1315353'
+                                                        target='_blank'
+                                                        class='url'>https://www.capital.fr/entreprises-marches/satoshi-nakamoto-qui-se-cache-derriere-le-createur-du-bitcoin-1315353</a>
+                                                </p>
+                                                <p>BlockchainWorldEvents, <em>Les implications des femmes dans la Blockchain : huit grands noms de 2018</em> on
+                                                    france.bc.events (in French) <a href='https://france.bc.events/fr/news/women-in-blockchain-eight-big-names-of-2018-89900'
+                                                        target='_blank'
+                                                        class='url'>https://france.bc.events/fr/news/women-in-blockchain-eight-big-names-of-2018-89900</a></p>
+                                                <h5 class="subtitle">Images</h5>
+                                                <p>Image 1 : <em>Les implications des femmes dans la Blockchain : huit grands noms de 2018</em> on
+                                                    france.bc.events <a href='https://france.bc.events/fr/news/women-in-blockchain-eight-big-names-of-2018-89900'
+                                                        target='_blank'
+                                                        class='url'>https://france.bc.events/fr/news/women-in-blockchain-eight-big-names-of-2018-89900</a></p>
+                                                <p>Image 2 : La blockchain, un outil révolutionnaire pour Ring <a
+                                                        href='https://blog.savoirfairelinux.com/fr-ca/2016/blockchain-ring-decentralisation/'
+                                                        target='_blank'
+                                                        class='url'>https://blog.savoirfairelinux.com/fr-ca/2016/blockchain-ring-decentralisation/</a></p>
+                                            </div>
+                                        </div>
+                                        <button class="modal-close is-large close-modal"
+                                            aria-label="close"
+                                            data-target="#blockchainModal"></button>
+                                    </div>
+                                    <button class="button is-light is-fullwidth open-modal" aria-haspopup="true" data-target="#blockchainModal">Keep reading</button>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-primary">
-                            <p class="title">Side column</p>
-                            <p class="subtitle">With some content</p>
+                            <h3 class="title">Variables</h3>
+                            <p class="subtitle"><span class="tag">Javascript</span> <span class="tag">CSS</span></p>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                                    tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                <p>Here's the deal.</p>
+                                <img src="images/projects/dev/js_variables.jpg" alt="variables in javascript">
+                                <a class="button is-fullwidth is-light" href="https://codesandbox.io/s/confident-thunder-juv9p" target="_blank">Take the (color) wheel!</a>
                             </div>
                         </article>
                     </div>
-                    <div class="tile is-parent is-8">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Main column</p>
-                            <p class="subtitle">With some content</p>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">E-motion</h3>
+                            <p class="subtitle"><span class="tag">After Effects</span> <span class="tag">Illustrator</span></p>
                             <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                                    tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                                <p>"Describe an emotion."<br>Exclusion. After a while it blends and leads to more exclusion.</p>
+                                <div class="aspect-ratio">
+                                    <iframe class=""
+                                        src="https://www.youtube.com/embed/ZTHGQiOmPt4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <h3 class="title">Clock</h3>
+                            <p class="subtitle">
+                                <span class="tag">Javascript</span>
+                                <span class="tag">CSS</span>
+                            </p>
+                            <div class="content">
+                                <p>Counting (jelly)fish & sheep.</p>
+                                <img src="images/projects/dev/css_clock.jpg"
+                                    alt="react calculator">
+                                <a class="button is-fullwidth is-light"
+                                    href="https://codesandbox.io/s/js30-css-clock-8innx"
+                                    target="_blank">Check out the clockwork</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <h3 class="title">Panda 3.0</h3>
+                            <p class="subtitle"><span class="tag">Illustrator</span></p>
+                            <div class="content">
+                                <p>Things always come in threes. Well, pandas don't but I'm the one making the rules here.</p>
+                                <img src="images/projects/design/panda.jpg" alt="lowpoly panda">
+                                <button class="button is-light is-fullwidth open-modal" data-target="#pandaModal">See 1.0 & 2.0</button>
+                                <div class="modal"
+                                    id="pandaModal">
+                                    <div class="modal-background"
+                                        data-target="#pandaModal"></div>
+                                    <div class="modal-content">
+                                        <div class="box">
+                                            <h4 class="subtitle">Panda 1.0</h4>
+                                            <img src="images/projects/design/panda1.jpg" alt="panda lowpoly 1.0">
+                                        </div>
+                                        <div class="box">
+                                            <h4 class="subtitle">Panda 2.0</h4>
+                                            <img src="images/projects/design/panda2.jpg" alt="panda lowpoly 2.0">
+                                        </div>
+                                    </div>
+                                    <button class="modal-close is-large close-modal"
+                                        aria-label="close"
+                                        data-target="#pandaModal"></button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-dark-grey">
+                            <h3 class="title">Open source: when can we expect open design?</h3>
+                            <div class="content">
+                                <p><i>Why hasn't design gone open source yet? That's the question I immediately asked myself as a designer converted to development when I saw the TED : Linus Torvalds, the mind behind Linux, and I tried to answer it by writing this article.</i>
+                                </p>
+                                <p>
+                                    We will discuss the attitude of designers towards open source, the way open source has naturally imposed itself in development and what design is lacking to be a part of this movement that has become a philosophy.
+                                </p>
+                                <h4 class="subtitle is-uppercase">From freewares to open source</h4>
+                                <p>
+                                    There are a number of sources that mention open source design, or open design. There is a site with a promising name, the Open-Design Foundation. Wikipedia devotes an article to it, the Open-design movement. Any designer is probably able to mention at least five or six sites of royalty-free graphic.
+                                </p>
+                                <button class="button is-light is-fullwidth open-modal" data-target="#openSourceModal">Keep reading</button>
+                                <div class="modal"
+                                    id="openSourceModal">
+                                    <div class="modal-background"
+                                        data-target="#openSourceModal"></div>
+                                    <div class="modal-content">
+                                        <div class="box">
+                                            <p><i>Why hasn't design gone open source yet? That's the question I immediately asked myself as a designer converted to
+                                                    development when I saw the TED : Linus Torvalds, the mind behind Linux, and I tried to answer it by writing this
+                                                    article.</i>
+                                            </p>
+                                            <p>
+                                                We will discuss the attitude of designers towards open source, the way open source has naturally imposed itself in
+                                                development and what design is lacking to be a part of this movement that has become a philosophy.
+                                            </p>
+                                            <h4 class="subtitle">From freewares to open source</h4>
+                                            <p>
+                                                There are a number of sources that mention open source design, or open design. There is a site with a promising
+                                                name, the Open-Design Foundation. Wikipedia devotes an article to it, the Open-design movement. Any designer is probably able to mention at least five or six sites of royalty-free graphic resources.
+                                            </p>
+                                            <p>
+                                                But if you take a closer look, the Open-Design Foundation is not very active (the last article on the site dates back to 2015) and mainly offers some thoughts on the subject. The Wikipedia article does not talk about web design or graphic design but only about industrial and object design. Last but not least, the resources that can be found on the Internet (icons, photographs, logos) are "ready to use" and are to design what freewares were to software before the arrival of Linux and later open source as a philosophy. It's more about access to content than a real movement that would have the ambition to make progress design and graphic design as a discipline or at least to bring people to collaborate.
+                                            </p>
+                                            <h4 class="subtitle">The sociability of the human race</h4>
+                                            <p>
+                                                At first glance it seems astonishing that the people behind open source are the least sociable species on the planet: developers. And yet, they have created a real movement based on data sharing and group work.
+                                            </p>
+                                            <blockquote>
+                                                "I'm not a people person" - Linus Torvalds
+                                            </blockquote>
+                                            <p>
+                                                Conversely, designers and other creatives are known to work together, through group brainstormings and multitudes of Post-It's stuck on walls, and yet... Yet the most common topic on the Internet regarding the work of creatives is the protection of their work. For or against watermarks? Would they have to disfigure their work to prevent it from being stolen, copied or re-sold, most of the time not only without their consent, but often without them knowing about it?
+                                            </p>
+                                            <h4 class="subtitle"> The issue of intellectual property</h4>
+                                            <blockquote>
+                                                "The worry that many people have, starting out, is that people are going to take advantage of their work." - Linus Torvalds
+                                            </blockquote>
+                                            <p>
+                                                The arrival of open source has greatly worried companies that until then had a monopoly. Today, creative people have the same concern. They fear that their work loses value if it is used by others. If open source has demonstrated one thing, it is that it's not an impoverishment, but an enrichment of the discipline. But then, why is it that while the Open Source Initiative is celebrating its twentieth anniversary, design hasn't learned from development? It has much to learn from a functioning that encourages progress, at a time when innovation is increasingly marginal. Why is it that we spend more time worrying about what our work will become than we do about creating, collaborating and making progress?
+                                            </p>
+                                            <p>
+                                                It seems to me that the answer lies in one sentence: project-final-V10-done-LAST.svg. Applying the open source
+                                                philosophy to design will only be possible once we stop opposing design and development. When we stop considering that a "real" development project is necessarily repulsive in terms of UI, and that a designer is necessarily disorganized. When will encourage designers, developers and creative people in general to work hand in hand to increase their own skills, but also to imagine together the design and technologies of tomorrow.
+                                            </p>
+                                            <h4 class="subtitle">No tools, no open source</h4>
+                                            <p>
+                                                Designers are missing something essential for that: a tool that allows them to leave behind their misnamed files and eventually their unsightly watermarks. There is now a versioning tool for designers, Abstract, which prototypr.io explains very well in its article on the subject. It allows you to version your projects and synchronize them with Github, Gitlab or Bitbucket, without having to master the terminal commands. The problem is that it is currently only usable with Sketch, and therefore only available on Mac OS. There go ideals of an open source world. However, the project started in 2017 and we can hope that it will evolve in the coming months and years to allow other types of files to be synchronized.
+                                            </p>
+                                            <p>
+                                                The path of open design is open and just waiting to be taken. So, who will dedicate themselves to create a true
+                                                designer's Git? And why not you? Why not me? Why not us?</p>
+                                        </div>
+                                    </div>
+                                    <button class="modal-close is-large close-modal"
+                                        aria-label="close"
+                                        data-target="#openSourceModal"></button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <h3 class="title">Type ahead</h3>
+                            <p class="subtitle">
+                                <span class="tag">Javascript</span>
+                                <span class="tag">CSS</span>
+                            </p>
+                            <div class="content">
+                                <p>Look up any US city or state and get the number of inhabitants. Because why not?</p>
+                                <img src="images/projects/dev/type_ahead.jpg" alt="type ahead project screenshot">
+                                <a class="button is-light is-fullwidth" href="https://codesandbox.io/s/js30-type-ahead-em85u" target="_blank">Look something up!</a>
                             </div>
                         </article>
                     </div>
@@ -202,7 +659,7 @@
             <p>Elisabeth Azémard &copy; 2020</p>
         </div>
     </footer>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
