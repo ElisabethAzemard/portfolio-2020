@@ -13,14 +13,16 @@
 </head>
 
 <body>
-    <header class="hero is-dark is-medium">
+    <header class="hero is-dark">
         <div class="hero-head">
             <nav class="navbar is-transparent">
                 <div class="container">
                     <div class="navbar-brand">
                         <h1>
-                            <a class="navbar-item is-family-monospace has-text-weight-bold" href="index.html">
-                                <img src="./images/logo.png" alt="Logo">
+                            <a class="navbar-item is-family-monospace has-text-weight-bold"
+                                href="index.html">
+                                <img src="./images/logo.png"
+                                    alt="Logo">
                                 &nbsp;&nbsp;Elisabeth Azémard
                             </a>
                         </h1>
@@ -38,15 +40,18 @@
                                 href="index.html">
                                 Work
                             </a>
-                            <a class="navbar-item is-active" href="#">
+                            <a class="navbar-item is-active"
+                                href="#">
                                 About
                             </a>
                             <span class="navbar-item">
                                 <a class="button is-dark is-inverted"
                                     href="https://github.com/ElisabethAzemard"
-                                    target="_blank">
+                                    target="_blank"
+                                    rel="noopener">
                                     <span class="icon">
-                                        <img src="images/github.png" alt="github icon">
+                                        <img src="images/github.png"
+                                            alt="github logo">
                                     </span>
                                     <span>Github</span>
                                 </a>
@@ -59,10 +64,18 @@
 
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="title is-size-1 is-family-monospace" id="typewriter">
-                    <span class="sr-only">You can make anything by coding, designing, writing.</span>
+                <!-- Tablet & desktop -->
+                <h2 class="title is-size-3 is-family-monospace is-hidden-mobile"
+                    id="typewriter">
+                    <span class="is-sr-only">You can make anything by coding, designing, writing.</span>
                 </h2>
-                <p class="subtitle">C.S. Lewis</p>
+                <!-- Mobile -->
+                <h2 class="title is-size-3 is-family-monospace is-hidden-tablet"
+                    id="typewriterMobile">
+                    <span class="is-sr-only">You can make anything by coding, designing, writing.</span>
+                </h2>
+                <p class="subtitle is-size-5 has-no-opacity"
+                    id="quoteAuthor">C.S. Lewis</p>
             </div>
         </div>
     </header>
