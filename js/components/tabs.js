@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('click', (e) => {
             let previousTab = document.querySelector('#tabs > .is-active');
             previousTab.classList.remove('is-active');
+            previousTab.classList.remove('has-text-dark-grey');
             tab.classList.add('is-active');
+            tab.classList.add('has-text-dark-grey');
             openTab(tab);
         });
     });
